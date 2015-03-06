@@ -1,7 +1,5 @@
 package br.com.udacity.sunshine;
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.location.Location;
@@ -9,10 +7,9 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View.OnClickListener;
-import android.widget.SeekBar;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements LocationListener{
@@ -28,6 +25,7 @@ public class MainActivity extends Activity implements LocationListener{
 		}
 		LocationManager mLocationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 		mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
+		Log.i("MainActivity","TALEA<EA<E");
 	}
 	
 
